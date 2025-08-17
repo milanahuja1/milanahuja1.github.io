@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "inter", serif;
+  font-weight: 550;
 }
 
 .navbar {
@@ -37,9 +38,3 @@ body {
   text-decoration: underline;
 }
 
-.playfair-display-coolFont {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-}

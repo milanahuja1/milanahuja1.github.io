@@ -1,6 +1,12 @@
+
+
 .homeTitle{
   font-size: 10em;
+  font-family: "Inter", serif;
+  font-weight: 750;
+  font-style: normal;
   color: #333;
   text-align: center;
   margin-top: 20px;
 }
+
