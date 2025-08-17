@@ -10,3 +10,21 @@
   margin-top: 20px;
 }
 
+.contactTitle{
+  font-size: 10em;
+  font-family: "Playfair Display", serif;
+  font-weight: 750;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.emailStyle {
+  font-size: 1.5em;
+  font-family: "Inter", serif;
+  font-weight: 550;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
