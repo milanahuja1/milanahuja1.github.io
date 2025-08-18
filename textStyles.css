@@ -40,3 +40,20 @@
 body{
   background-color: #ecebe7;
 }
+
+.bodyText{
+  font-size: 1.2em;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+.headingText{
+  font-size: 2em;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}

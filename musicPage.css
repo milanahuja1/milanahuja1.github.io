@@ -1,0 +1,13 @@
+.profilePicture {
+  width: 600px;               /* set image size */
+  height: auto;
+  border-radius: 20px;        /* optional: rounded corners */
+}
+
+.footprint {
+  display: flex;              /* put children side by side */
+  align-items: center;        /* vertically centre text with image */
+  gap: 20px;                  /* space between image and text */
+  max-width: 900px;           /* optional: keep layout tidy */
+  margin: 50px auto;          /* centre on the page */
+}

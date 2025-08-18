@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>milans website</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="textStyles.css">
+  <link rel="stylesheet" href="musicPage.css">
+<body class="homePage">
+
+<div id="navbar-placeholder"></div>
+<div id="subtitle" class="subtitle">
+  <p class="headingText">I have been playing guitar for around 11 years. I am currently in a modern jazz band called footprint.</p>
+</div>
+
+<div class="footprint">
+    <img src="images/album_cover.jpg" alt="Album cover" class="profilePicture">
+  <p class="bodyText">We recently released our debut self-titled EP.</p>
+</div>
+
+
+  <script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
