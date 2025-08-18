@@ -1,3 +1,47 @@
 body.homePage {
   cursor: url("images/cursor2.png") 0 0, auto;
 }
+body{
+  background-color: #ecebe7;
+}
+
+.aboutPageText {
+  margin: 10px;
+  
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #333;
+}
+body{
+  background-color: #ecebe7;
+}
+
+.aboutPageContainer {
+  display: flex;              /* put children side by side */
+  align-items: center;        /* vertically centre text with image */
+  gap: 20px;                  /* space between image and text */
+  max-width: 900px;           /* optional: keep layout tidy */
+  margin: 50px auto;          /* centre on the page */
+}
+
+.profilePicture {
+  width: 600px;               /* set image size */
+  height: auto;
+  border-radius: 10px;        /* optional: rounded corners */
+}
+
+.aboutPageText {
+  flex: 1;                    /* text takes up remaining space */
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;        
+  max-width: 900px;  
+  gap: 50px;         
+  margin: 40px auto;         
+}
