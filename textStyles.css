@@ -29,14 +29,29 @@
   margin-top: 20px;
 }
 .subtitle{
-  font-size:1.5em;
+  font-size:2em;
   font-family: "Playfair Display", serif;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-bottom: 10rem;
   font-weight: 300;
   color: #333;
   text-align: center;
   margin-top: 20px;
 }
-
+.subtitleDark{
+  font-size:2em;
+  font-family: "Playfair Display", serif;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-bottom: 2.5rem;
+  font-weight: 300;
+  color: #ffd4d4;
+  text-align: center;
+  margin-top: 20px;
+}
 body{
   background-color: #ecebe7;
 }

@@ -51,9 +51,10 @@ body{
   font-family: "Inter", serif;
   font-weight: 600;
   color: #333;
+  line-height: 1;
   text-decoration: none;
   margin-top: 20px;
-  display: block;           /* was inline-block */
+  display: block;           
   text-align: center;       /* centres the arrow */
   animation: pulse 2s infinite;
 }

@@ -5,9 +5,40 @@
 }
 
 .footprint {
-  display: flex;              /* put children side by side */
-  align-items: center;        /* vertically centre text with image */
-  gap: 20px;                  /* space between image and text */
-  max-width: 900px;           /* optional: keep layout tidy */
-  margin: 50px auto;          /* centre on the page */
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.footprint > * {
+  flex: 1 1 auto;  /* items shrink as needed */
+  min-width: 0;    /* prevents overflow of long text/images */
+}
+
+.footprintMain {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;   /* centres horizontally */
+}
+
+.footprintLogo img{
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  height: auto;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;   /* centres horizontally */
+}
+
+body.musicPage {
+  cursor: url("images/foot.png") 0 0, auto;
+}
+body.musicPage {
+  background-color: #212121;
 }
