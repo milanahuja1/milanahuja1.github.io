@@ -1,3 +1,31 @@
 body{
   background-color: #ecebe7;
 }
+
+.emailStyle {
+  display: block;        /* makes it behave like a heading */
+  font-size: 3rem;       /* same as your h1 */
+  font-weight: bold;
+  text-align: center;
+  color: #141843;
+  text-decoration: none; /* no underline */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.emailStyle:hover {
+  color: #004cff;
+  transform: scale(1.05);
+}
+
+.emailStyle a {
+  text-decoration: none;
+  color: inherit;         /* inherit colour from parent */
+}
+
+.emailStyle a:hover {
+  color: #004cff;         /* or any hover colour */
+}
+
+.subtitle {
+  font-size: 5em;
+}
