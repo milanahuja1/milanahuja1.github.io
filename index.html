@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>milans website</title>
-  <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="textStyles.css">
-  <link rel="stylesheet" href="homePage.css">
+  <link rel="stylesheet" href="homePage/homePage.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,30 +22,28 @@
 <div style="height: 500px;"></div>
 
 <div id="firstImage" class="homeContent">
-    <img src="images/picture1.jpeg" alt="A picture of Milan holding a beer" class="profilePicture">
+    <img src="homePage/images/beer.jpeg" alt="A picture of Milan holding a beer" class="profilePicture">
   <p class="aboutPageText">Hi, I'm Milan.</p>
 </div>
 
 <div class="homeContent">
-    <img src="images/guitar.gif" alt="GIF of Milan playing the guitar" class="profilePicture">
+    <img src="homePage/images/guitar.gif" alt="GIF of Milan playing the guitar" class="profilePicture">
   <p class="aboutPageText">I play the guitar and I'm in a band called footprint.</p>
 </div>
 
 <div class="homeContent">
-    <img src="images/coding.JPG" alt="Milan doing some coding" class="profilePicture">
+    <img src="homePage/images/coding.JPG" alt="Milan doing some coding" class="profilePicture">
   <p class="aboutPageText">I'm also in my third year of software engineering at the University of Auckland.</p>
 </div>
 
   <div class=" bottomPrompt">
   
     <a href="#navbar-placeholder" class="bottomArrow">↑</a>
-  <p class="bottomText">Click this to go back up</p>
 </div>
-
 <div id="footer-placeholder"></div>
 
   <script>
-  fetch("navbar.html")
+  fetch("/navbar/navbar.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar-placeholder").innerHTML = data;
@@ -54,7 +51,7 @@
 </script>
 
 <script>
-  fetch("footer.html")
+  fetch("/footer/footer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("footer-placeholder").innerHTML = data;
