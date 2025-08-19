@@ -23,6 +23,7 @@
   align-items: center;
   max-width: 450px;
   margin: 0 auto;   /* centres horizontally */
+  
   filter: drop-shadow(0 0 15px rgba(253, 144, 3, 0.4))
           drop-shadow(0 0 30px rgba(249, 199, 0, 0.2));
 }
@@ -33,15 +34,105 @@
   padding-left: 20px;
   padding-bottom: 100px;
   height: auto;
-  width: 1000px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;   /* centres horizontally */
+  animation: glowFade 2s infinite alternate;
   filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4))
           drop-shadow(0 0 30px rgba(255, 45, 8, 0.2));
 }
 
+@keyframes glowFade {
+  0% {
+      filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.431))
+          drop-shadow(0 0 30px rgba(255, 45, 8, 0.294));
+
+  }
+  100% {
+      filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.378))
+          drop-shadow(0 0 30px rgba(255, 45, 8, 0.094));
+
+  }
+}
+
+
 body.musicPage {
   cursor: url("images/foot.png") 0 0, auto;
-  background: #ecebe7;
+  background: #f3efdf;
+}
+
+.topBar {
+  display: grid;
+  grid-template-columns: auto auto auto; /* left cloud | logo | right cloud */
+  justify-content: center;               /* centre the whole group */
+  align-items: center;
+  justify-items: center;
+  column-gap: 48px;                      /* equal spacing from logo to both clouds */
+  padding: 20px 30px;
+  width: 100%;
+  background: #f3efdf;
+}
+
+.leftCloudBoundingBox, .rightCloudBoundingBox {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCloudImage, .rightCloudImage {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 15px rgba(255, 102, 0, 0.314))
+
+}
+
+.topBar .footprintLogo img {
+  width: 800px;           /* logo size in the top bar */
+  height: auto;
+  padding: 0;             /* override large global padding */
+  margin: 0;
+}
+
+/* Cloud sway animations */
+.leftCloudBoundingBox, .rightCloudBoundingBox {
+  position: relative;
+  overflow: hidden; /* keep the animation inside the box */
+}
+
+.leftCloudImage {
+  animation: cloudSwayLeft 6s ease-in-out infinite;
+  transform-origin: 50% 60%;
+  will-change: transform;
+}
+
+.rightCloudImage {
+  animation: cloudSwayRight 7.5s ease-in-out infinite;
+  transform-origin: 50% 60%;
+  will-change: transform;
+  animation-delay: 0.6s; /* slight phase offset */
+}
+
+@keyframes cloudSwayLeft {
+  0%   { transform: translateY(0) rotate(-1.5deg); }
+  50%  { transform: translateY(6px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1.5deg); }
+}
+
+@keyframes cloudSwayRight {
+  0%   { transform: translateY(0) rotate(2deg); }
+  50%  { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(2deg); }
+}
+body.musicPage .navbar {
+  background-color: #8A1C2B; /* or any colour you want for this page */
+
+}
+body.musicPage .navbar a {
+  color: #f3efdf;   /* light beige text for contrast */
+}
+
+body.musicPage .navbar a:hover {
+  color: #ffd9d9;   /* optional hover colour */
 }
