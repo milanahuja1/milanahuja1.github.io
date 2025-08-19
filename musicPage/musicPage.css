@@ -136,3 +136,16 @@ body.musicPage .navbar a {
 body.musicPage .navbar a:hover {
   color: #ffd9d9;   /* optional hover colour */
 }
+
+.spotifyLogo {
+  width: 200px; /* adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* centres the logo */
+  filter: drop-shadow(0 0 15px rgba(16, 208, 86, 0.378))
+          drop-shadow(0 0 30px rgba(16, 255, 4, 0.094));
+}
+.spotifyLogo:hover {
+  transform: scale(1.05); /*slight zoom on hover */
+  transition: transform 0.1s ease-in-out; /* smooth transition */
+}

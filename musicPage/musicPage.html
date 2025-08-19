@@ -44,19 +44,17 @@
 <div class="footprintMain">
     <img src="images/album_cover.jpg" alt="Album cover" class="profilePicture">
 </div>
+
+
 <div id="subtitle" class="subtitle">
-  <p class="subtitle">I have been playing guitar for around 11 years. I am currently in a modern jazz band called footprint.</p>
+  <p class="subtitle">We recently released our debut self-titled EP.</p>
+  <p class="bodyText">It's really cool and you should listen to it on spotify.</p>
 </div>
-<p class="bodyText">We recently released our debut self-titled EP.</p>
+
+<div><img src="images/spotify.png" class="spotifyLogo" alt="Spotify logo"></div>
 
 
-  <script>
-  fetch("/navbar/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar-placeholder").innerHTML = data;
-    });
-</script>
+<script src="/musicPage/musicPage.js"></script>
 
 </body>
 </html>

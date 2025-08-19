@@ -32,9 +32,9 @@
   font-size:2em;
   font-family: "Playfair Display", serif;
   padding-left: 10rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-right: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 0px;
   font-weight: 300;
   color: #333;
   text-align: center;
@@ -61,6 +61,7 @@ body{
   font-family: "Playfair Display", serif;
   font-weight: 300;
   color: #333;
+  padding-top: 0rem;
   text-align: center;
   margin-top: 20px;
 }
