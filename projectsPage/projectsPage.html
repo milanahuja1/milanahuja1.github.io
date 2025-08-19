@@ -17,7 +17,7 @@
 <details class="accordion">
   <summary>milan.nz (this website)</summary>
   <div class="panel">
-    <p>I like guitars, code, and good coffee.</p>
+    <p>placeholder text</p>
   </div>
 </details>
 
@@ -26,24 +26,9 @@
 <!-- the DNN one -->
  <!-- The detective game -->
   <!-- Plugin -->
-
-
-<details class="accordion">
-  <summary>milan.nz (this website)</summary>
-  <div class="panel">
-    <p>I like guitars, code, and good coffee.</p>
-  </div>
-</details>
-
-
-
-  <script>
-  fetch("/navbar/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar-placeholder").innerHTML = data;
-    });
-</script>
+<div id="footer-placeholder"></div>
+<script src="/navbar/loadNavbar.js" defer></script>
+<script src="/footer/loadFooter.js" defer></script>
 
 </body>
 </html>
