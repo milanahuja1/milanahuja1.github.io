@@ -67,3 +67,38 @@ body{
 .arrow:hover {
   color: rgb(15, 15, 15);
 }
+
+.bottomArrow {
+  font-size: 20em;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  color: #333;
+  line-height: 1;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;           
+  text-align: center;       /* centres the arrow */
+  animation: pulse 2s infinite;
+}
+
+.bottomText {
+  font-size: 7em;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  color: #333;
+  line-height: 1;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;           
+  text-align: center;       /* centres the text */
+}
+
+.bottomPrompt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       /* centres the content */
+  margin-top: 0px;
+  gap: 20px;                /* space between arrow and text */
+  padding: 10em;   
+         /* space above the prompt */
+}
