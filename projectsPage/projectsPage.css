@@ -63,3 +63,6 @@ body {
 main {
   flex: 1;  /* fills available space */
 }
+body .projectsPage .navbar {
+  background-color: #333;
+}
