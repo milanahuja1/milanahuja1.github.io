@@ -167,6 +167,6 @@ body.musicPage .navbar a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px; /* space between links */
+  gap: 40px; /* space between links */
   margin-top: 20px; /* space above the links */
 }

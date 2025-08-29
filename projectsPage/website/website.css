@@ -1,0 +1,18 @@
+.headingText{
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+.bodyText{
+  font-size: 1.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+  text-align: left;
+  margin-top: 20px;
+}
