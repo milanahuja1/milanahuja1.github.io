@@ -121,16 +121,16 @@ body.musicPage {
 }
 
 @keyframes cloudSwayRight {
-  0%   { transform: translateY(0) rotate(2deg); }
+  0%   { transform: translateY(0) rotate(3deg); }
   50%  { transform: translateY(-6px) rotate(-2deg); }
-  100% { transform: translateY(0) rotate(2deg); }
+  100% { transform: translateY(0) rotate(3deg); }
 }
 body.musicPage .navbar {
-  background-color: #8A1C2B; /* or any colour you want for this page */
+  background-color: #8A1C2B; 
 
 }
 body.musicPage .navbar a {
-  color: #f3efdf;   /* light beige text for contrast */
+  color: #f3efdf;   
 }
 
 body.musicPage .navbar a:hover {
