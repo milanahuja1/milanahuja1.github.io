@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family: "inter", serif;
-  font-weight: 550;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-weight: 600;
 }
 
 .navbar {
@@ -17,6 +19,7 @@ body {
 
 .logo {
   color: #0062ff;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.2rem;
