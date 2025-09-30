@@ -5,6 +5,14 @@
   <title>Milan's Website</title>
   <link rel="stylesheet" href="/textStyles.css">
   <link rel="stylesheet" href="/projectsPage/projectsPage.css">
+  <style>
+    /* Make summary reliably clickable on Chromium */
+    details.accordion > summary { display:flex; align-items:center; gap:8px; cursor:pointer; -webkit-user-select:none; user-select:none; position:relative; z-index:1; }
+    /* Ensure clicks on child nodes reach <summary> */
+    details.accordion > summary > * { pointer-events: none; }
+    /* Optional: hide default marker */
+    summary::-webkit-details-marker { display:none; }
+  </style>
 </head>
 <body class="projectsPage">
 
@@ -17,7 +25,7 @@
 <!-- vroomly -->
  <details class="accordion">
   <summary style="display:flex; align-items:center; gap:8px; cursor:pointer;">
-    <img src="/projectsPage/vroomly/vroomlyLogo.png" alt="Vroomly logo">
+    <img src="/projectsPage/vroomly/vroomlyLogo.png" alt="Vroomly logo" draggable="false">
     <span style="font-size:1.5rem;">&gt;</span>
   </summary>
   <div class="panel">
@@ -27,7 +35,7 @@
 <!-- gestureX -->
   <details class="accordion">
   <summary style="display:flex; align-items:center; gap:8px; cursor:pointer;">
-    <img src="/projectsPage/gestureX/gestureX.png" alt="GestureX Logo">
+    <img src="/projectsPage/gestureX/gestureX.png" alt="GestureX Logo" draggable="false">
     <span style="font-size:1.5rem;">&gt;</span>
   </summary>
   <div class="panel">
@@ -78,7 +86,47 @@
 
 
 <div id="footer-placeholder"></div>
-<script src="/navbar/loadNavbar.js" defer></script>
+</script src="/navbar/loadNavbar.js" defer></script>
 <script src="/footer/loadFooter.js" defer></script>
+<script>
+  // Force-toggling details for Chromium edge-cases (overlays, drags, nested elements)
+  document.querySelectorAll('details.accordion').forEach(function(det){
+    var sum = det.querySelector('summary');
+    if (!sum) return;
+
+    // A11y + focus
+    sum.setAttribute('role','button');
+    sum.setAttribute('tabindex','0');
+    sum.setAttribute('aria-expanded', det.open ? 'true' : 'false');
+
+    // Keep aria in sync on native toggle
+    det.addEventListener('toggle', function(){
+      sum.setAttribute('aria-expanded', det.open ? 'true' : 'false');
+    });
+
+    // Defensive: prevent drags swallowing clicks
+    sum.querySelectorAll('img, a, button, input, svg').forEach(function(el){
+      el.addEventListener('dragstart', function(e){ e.preventDefault(); });
+    });
+
+    // Manual toggle fallback
+    sum.addEventListener('click', function(e){
+      if (e.defaultPrevented) return;
+      e.preventDefault();
+      det.open = !det.open;
+      sum.setAttribute('aria-expanded', det.open ? 'true' : 'false');
+    });
+
+    // Keyboard support
+    sum.addEventListener('keydown', function(e){
+      var k = e.key || e.code;
+      if (k === 'Enter' || k === ' ' || k === 'Spacebar') {
+        e.preventDefault();
+        det.open = !det.open;
+        sum.setAttribute('aria-expanded', det.open ? 'true' : 'false');
+      }
+    });
+  });
+</script>
 </body>
 </html>
