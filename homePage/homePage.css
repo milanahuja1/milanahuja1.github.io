@@ -8,8 +8,8 @@ body{
 .aboutPageText {
   margin: 10px;
   
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 590;
   color: #333;
 }
 body{
