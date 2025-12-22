@@ -56,7 +56,6 @@ body{
   margin-top: 20px;
   display: block;           
   text-align: center;       /* centres the arrow */
-  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -76,4 +75,84 @@ body.homePage .navbar a {
 
 body.homePage .navbar a:hover {
   color: #262261;  
+}
+
+
+
+.homeTitle{
+  font-size: 10em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 590;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contactTitle{
+  font-size: 10em;
+  font-family: "Playfair Display", serif;
+  font-weight: 750;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.emailStyle {
+  font-size: 1.5em;
+  font-family: "Inter", serif;
+  font-weight: 550;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+.subtitle{
+  font-size:2em;
+  font-family: "Inter", serif;
+  padding-left: 10rem;
+  padding-top: 1rem;
+  padding-right: 10rem;
+  padding-bottom: 0px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+.subtitleDark{
+  font-size:2em;
+  font-family: "Playfair Display", serif;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-bottom: 2.5rem;
+  font-weight: 300;
+  color: #ffd4d4;
+  text-align: center;
+  margin-top: 20px;
+}
+body{
+  background-color: #ecebe7;
+}
+
+.bodyText{
+  font-size: 1.2em;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  color: #333;
+  padding-top: 0rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.headingText{
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,0 +1,24 @@
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: 200em;
+}
+
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-weight: 90em;
+  font-size: medium;
+}
+
+div.bodyDiv{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body{
+  background-color: #ffffff;
+}
+.navbar a {
+  color: #000000;
+}

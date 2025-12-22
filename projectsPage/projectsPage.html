@@ -6,11 +6,11 @@
   <link rel="stylesheet" href="/textStyles.css">
   <link rel="stylesheet" href="/projectsPage/projectsPage.css">
   <style>
-    /* Make summary reliably clickable on Chromium */
+    
     details.accordion > summary { display:flex; align-items:center; gap:8px; cursor:pointer; -webkit-user-select:none; user-select:none; position:relative; z-index:1; }
-    /* Ensure clicks on child nodes reach <summary> */
+    
     details.accordion > summary > * { pointer-events: none; }
-    /* Optional: hide default marker */
+    
     summary::-webkit-details-marker { display:none; }
   </style>
 </head>
@@ -78,15 +78,8 @@
   </div>
 </details>
 
-
-
-
-
-
-
-
 <div id="footer-placeholder"></div>
-</script src="/navbar/loadNavbar.js" defer></script>
+<script src="/navbar/loadNavbar.js" defer></script>
 <script src="/footer/loadFooter.js" defer></script>
 <script>
   // Force-toggling details for Chromium edge-cases (overlays, drags, nested elements)
