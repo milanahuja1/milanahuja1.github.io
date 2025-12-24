@@ -4,7 +4,7 @@ div.bodyDiv{
 }
 
 body{
-  background-color: #ffffff;
+  background-color: #ecebe7;
   font-size: 0.6em;
 }
 
@@ -69,4 +69,8 @@ p.backButton :hover {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+}
+
+.navbar {
+  background-color: #ecebe7;
 }

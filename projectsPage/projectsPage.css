@@ -1,5 +1,5 @@
 body.projectsPage{
-  background-color: #ffffff;
+  background-color: #ecebe7;
 }
 
 .accordion {
@@ -9,6 +9,7 @@ body.projectsPage{
   border-top: 0.2em solid #3a3a3a;
   border-bottom: 0.2em solid #3a3a3a;
   background: #fff;
+  background-color: #ecebe7;
   overflow: hidden;
 }
 
@@ -22,6 +23,7 @@ body.projectsPage{
   padding: 14px 16px ;
   font-weight: 600;
   user-select: none;
+  background-color: #ecebe7;
 }
 
 .accordion > summary::-webkit-details-marker { display: none; }
@@ -30,10 +32,10 @@ body.projectsPage{
 
 .accordion .panel { padding: 0px 0px; }
 
-.subtitle{
+.title {
+  font-size: 5em;
   text-align: center;
-  padding-bottom: 0px;
-  padding-top: 0px;
+  color: #333;
 }
 
 .accordion > summary img {
@@ -58,11 +60,9 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 0px;
+
 }
 
 main {
   flex: 1;  /* fills available space */
-}
-body .projectsPage .navbar {
-  background-color: #333;
 }

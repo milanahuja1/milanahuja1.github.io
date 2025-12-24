@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-  color: #0062ff;
+  color: inherit;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -40,7 +40,7 @@ body {
 }
 
 .nav-links li a {
-  color: #0062ff;
+  color: inherit;
   text-decoration: none;
   font-size: 1rem;
 }

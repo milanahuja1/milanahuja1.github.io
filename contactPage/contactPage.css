@@ -4,31 +4,28 @@ body{
 
 .emailStyle {
   display: block;        /* makes it behave like a heading */
-  font-size: 3rem;       /* same as your h1 */
+  font-size: 1em;       /* same as your h1 */
   font-weight: bold;
   text-align: center;
-  color: #141843;
+  color: #333;
   text-decoration: none; /* no underline */
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .emailStyle:hover {
-  color: #004cff;
-  transform: scale(1.05);
+  /* color: #004cff; */
+  text-decoration: underline;
 }
 
 .emailStyle a {
   text-decoration: none;
-  color: inherit;         /* inherit colour from parent */
+  color: inherit;         
 }
 
-.emailStyle a:hover {
-  color: #004cff;         /* or any hover colour */
-}
 
-.subtitle {
+.title {
   font-size: 5em;
   text-align: center;
+  color: #333;
 }
 
 div.contactContent {
