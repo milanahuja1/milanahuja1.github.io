@@ -29,6 +29,10 @@ body{
 }
 
 div.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100vw;
-  height: 86vh;
+  height: 94vh;
 }

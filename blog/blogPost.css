@@ -5,7 +5,6 @@ div.bodyDiv{
 
 body{
   background-color: #ecebe7;
-  font-size: 0.6em;
 }
 
 .navbar a {
@@ -16,23 +15,11 @@ div.blogContent {
   padding-left: 20vw;
   padding-right: 20vw;
   width: 60vw;
-  height: 88vh; 
+  height: 88vh;   
+  font-weight: 100;
+  font-family: Helvetica, sans-serif;
 }
 
-.blogPostLink {
-  font-size: 1em;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: left;
-  font-size: 1em;  
-  padding-left: 5vw;
-  padding-right: 5vw;
-  text-decoration: inherit;
-
-}
 
 
 .blogPostAnchor {
@@ -71,6 +58,16 @@ p.backButton :hover {
   text-align: center;
 }
 
-.navbar {
-  background-color: #ecebe7;
+
+h2.paragraph{
+  font-weight: 0.1px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.subheading{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  font-weight: 800;
+
 }

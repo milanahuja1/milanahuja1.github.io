@@ -5,29 +5,23 @@ div.bodyDiv{
 
 body{
   background-color: #ffffff;
-  font-size: 0.6em;
+  background-color: #ecebe7;
 }
 
 .navbar a {
   color: #000000;
 }
 
-div.blogContent {
-  padding-left: 20vw;
-  padding-right: 20vw;
-  width: 60vw;
-  height: 88vh; 
-}
 
 .blogPostLink {
-  font-size: 1em;  
+  font-size: 1.1em;  
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
+  
   text-align: left;
-  font-size: 1em;  
   padding-left: 5vw;
   padding-right: 5vw;
   text-decoration: inherit;
@@ -69,4 +63,13 @@ p.backButton :hover {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+}
+
+body.blog.navbar {
+  background-color: #ecebe7;
+}
+
+h2.paragraph{
+  font-family: 'Courier New', Courier, monospace;
+  
 }
