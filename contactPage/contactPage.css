@@ -1,19 +1,15 @@
-body{
-  background-color: #ecebe7;
-}
 
 .emailStyle {
-  display: block;        /* makes it behave like a heading */
-  font-size: 1em;       /* same as your h1 */
+  display: block;       
+  font-size: 1em;       
   font-weight: bold;
   text-align: center;
   color: #333;
-  text-decoration: none; /* no underline */
+  text-decoration: none; 
 }
 
 .emailStyle:hover {
-  /* color: #004cff; */
-  text-decoration: underline;
+  color: #004cff
 }
 
 .emailStyle a {

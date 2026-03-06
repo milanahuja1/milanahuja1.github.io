@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Cascadia; /* set name */
+  src: url(fonts/Cascadia_Code/CascadiaCode.ttf);
+}
+
+h1 {
+  font-family: Cascadia; /* use font */
+}
+
+body{
+  background: #f3efdf;
+}
+.text1 {
+  margin: 10vm;
+  font-family: Cascadia;
+  font-weight: 1px;
+  color: #670707;
+  flex: 1;                   
+  min-width: 0;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+
+.title {
+  font-size: 5em;
+  text-align: center;
+  color: #670707;
+}
+
+div.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 94vh;
+}

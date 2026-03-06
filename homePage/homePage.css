@@ -2,12 +2,11 @@ body.homePage {
   cursor: url("images/cursor2.png") 0 0, auto;
 }
 
-
 .aboutPageText {
   margin: 10vm;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Cascadia;
   font-weight: 1px;
-  color: #333;
+  color: #670707;
   flex: 1;                   
   min-width: 0;
   font-size: 2.5rem;
@@ -58,7 +57,7 @@ body.homePage {
   font-size: 1500%;
   font-family: "Inter", serif;
   font-weight: 600;
-  color: #333; 
+  color: #670707;
   line-height: 1;
   text-decoration: none;
   display: block;           
@@ -66,35 +65,14 @@ body.homePage {
 }
 
 
-
-body.homePage .navbar {
-  background-color: #ffffff; 
-
-}
-body.homePage .navbar a {
-  color: #020f23;   
-}
-
-body.homePage .navbar a:hover {
-  color: #262261;  
-}
-
-
 .homeTitle{
   font-size: 600%;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Cascadia;
   font-weight: 600;
   font-style: normal;
-  color: #333;
+  color: #670707;
   text-align: center;
 }
-
-
-
-body{
-  background-color: #ecebe7;
-}
-
 
 html {
   scroll-behavior: smooth;
