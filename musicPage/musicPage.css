@@ -125,14 +125,6 @@ body.musicPage {
   50%  { transform: translateY(-6px) rotate(-2deg); }
   100% { transform: translateY(0) rotate(3deg); }
 }
-}
-body.musicPage .navbar a {
-  color: #f3efdf;   
-}
-
-body.musicPage .navbar a:hover {
-  color: #ffd9d9;   /* optional hover colour */
-}
 
 .spotifyLogo {
   width: 200px; /* adjust size as needed */
