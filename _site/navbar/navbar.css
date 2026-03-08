@@ -44,12 +44,18 @@ html, body {
   margin: 0;
   padding: 0;
   flex-direction: row;
+  color: #c4314c; 
 
   align-items: center;
 }
 
 .logo:hover {
-  color: #318cc4; 
+  color: #670707; 
+
+}
+
+.logo{
+  color: #c4314c; 
 
 }
 
@@ -57,9 +63,9 @@ html, body {
   color: inherit;
   text-decoration: none;
   font-size: 1rem;
-  color: #091382;
+  color: #c4314c; 
 }
 
 .nav-links li a:hover {
-  color: #318cc4;  
+  color: #670707;  
 }
