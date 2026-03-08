@@ -1,0 +1,34 @@
+
+.emailStyle {
+  display: block;       
+  font-size: 1em;       
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  text-decoration: none; 
+}
+
+.emailStyle:hover {
+  color: #004cff
+}
+
+.emailStyle a {
+  text-decoration: none;
+  color: inherit;         
+}
+
+
+.title {
+  font-size: 5em;
+  text-align: center;
+  color: #333;
+}
+
+div.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 94vh;
+}

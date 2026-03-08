@@ -1,0 +1,75 @@
+div.bodyDiv{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body{
+  background-color: #ffffff;
+  background-color: #ecebe7;
+}
+
+.navbar a {
+  color: #000000;
+}
+
+
+.blogPostLink {
+  font-size: 1.1em;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-decoration: inherit;
+
+}
+
+
+.blogPostAnchor {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogPostAnchor:hover {
+  text-decoration: underline;
+}
+
+div.TitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p.backButton {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  left: 5vw;
+}
+p.backButton :hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+body.blog.navbar {
+  background-color: #ecebe7;
+}
+
+h2.paragraph{
+  font-family: 'Courier New', Courier, monospace;
+  
+}

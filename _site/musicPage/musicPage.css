@@ -1,0 +1,172 @@
+.profilePicture {
+  width: 600px;               /* set image size */
+  height: auto;
+  border-radius: 20px;        /* optional: rounded corners */
+}
+
+.footprint {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.footprint > * {
+  flex: 1 1 auto;  /* items shrink as needed */
+  min-width: 0;    /* prevents overflow of long text/images */
+}
+
+.footprintMain {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;   /* centres horizontally */
+  
+  filter: drop-shadow(0 0 15px rgba(253, 144, 3, 0.4))
+          drop-shadow(0 0 30px rgba(249, 199, 0, 0.2));
+}
+
+.footprintLogo img{
+  display: flex;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-bottom: 100px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;   /* centres horizontally */
+  animation: glowFade 2s infinite alternate;
+  filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4))
+          drop-shadow(0 0 30px rgba(255, 45, 8, 0.2));
+}
+
+@keyframes glowFade {
+  0% {
+      filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.431))
+          drop-shadow(0 0 30px rgba(255, 45, 8, 0.294));
+
+  }
+  100% {
+      filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.378))
+          drop-shadow(0 0 30px rgba(255, 45, 8, 0.094));
+
+  }
+}
+
+
+body.musicPage {
+  cursor: url("images/foot.png") 0 0, auto;
+  background: #f3efdf;
+}
+
+.topBar {
+  display: grid;
+  grid-template-columns: auto auto auto; /* left cloud | logo | right cloud */
+  justify-content: center;               /* centre the whole group */
+  align-items: center;
+  justify-items: center;
+  column-gap: 48px;                      /* equal spacing from logo to both clouds */
+  padding: 20px 30px;
+  width: 100%;
+  background: #f3efdf;
+}
+
+.leftCloudBoundingBox, .rightCloudBoundingBox {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCloudImage, .rightCloudImage {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 15px rgba(255, 102, 0, 0.314))
+
+}
+
+.topBar .footprintLogo img {
+  width: 800px;           /* logo size in the top bar */
+  height: auto;
+  padding: 0;             /* override large global padding */
+  margin: 0;
+}
+
+/* Cloud sway animations */
+.leftCloudBoundingBox, .rightCloudBoundingBox {
+  position: relative;
+  overflow: hidden; /* keep the animation inside the box */
+}
+
+.leftCloudImage {
+  animation: cloudSwayLeft 6s ease-in-out infinite;
+  transform-origin: 50% 60%;
+  will-change: transform;
+}
+
+.rightCloudImage {
+  animation: cloudSwayRight 7.5s ease-in-out infinite;
+  transform-origin: 50% 60%;
+  will-change: transform;
+  animation-delay: 0.6s; /* slight phase offset */
+}
+
+@keyframes cloudSwayLeft {
+  0%   { transform: translateY(0) rotate(-1.5deg); }
+  50%  { transform: translateY(6px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1.5deg); }
+}
+
+@keyframes cloudSwayRight {
+  0%   { transform: translateY(0) rotate(3deg); }
+  50%  { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(3deg); }
+}
+
+.spotifyLogo {
+  width: 200px; /* adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* centres the logo */
+  filter: drop-shadow(0 0 15px rgba(16, 208, 86, 0.378))
+          drop-shadow(0 0 30px rgba(16, 255, 4, 0.094));
+}
+.spotifyLogo:hover {
+  transform: scale(1.05); /*slight zoom on hover */
+  transition: transform 0.1s ease-in-out; /* smooth transition */
+}
+
+.youtubeLogo {
+  width: 220px; /* adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* centres the logo */
+  filter: drop-shadow(0 0 15px rgba(208, 16, 16, 0.378))
+          drop-shadow(0 0 30px rgba(255, 4, 4, 0.094));
+}
+.youtubeLogo:hover {
+  transform: scale(1.05); /*slight zoom on hover */
+  transition: transform 0.1s ease-in-out; /* smooth transition */
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px; /* space between links */
+  margin-top: 20px; /* space above the links */
+}
+
+.subtitle{
+    display: flex;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;   /* centres horizontally */
+
+}
