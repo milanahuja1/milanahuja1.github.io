@@ -36,3 +36,12 @@ div.contactContent {
   width: 100vw;
   height: 94vh;
 }
+
+.linkText:hover {
+  color: #d32b2b;
+}
+
+.linkText {
+  text-decoration: none;
+  color: #670707;       
+}
