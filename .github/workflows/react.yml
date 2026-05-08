@@ -1,33 +1,37 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
-name: React CI
+name: Deploy React App
 
 on:
   push:
     branches: [ "dev" ]
 
+permissions:
+  contents: write
+
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+
+    - name: Use Node.js 20.x
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 20.x
         cache: 'npm'
         cache-dependency-path: milan.nz/package-lock.json
-    - run: npm ci
+
+    - name: Install dependencies
+      run: npm ci
       working-directory: milan.nz
-    - run: npm run build --if-present
+
+    - name: Build
+      run: npm run build
       working-directory: milan.nz
-    - run: npm test
-      working-directory: milan.nz
+
+    - name: Deploy to main
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: milan.nz/build
+        publish_branch: main

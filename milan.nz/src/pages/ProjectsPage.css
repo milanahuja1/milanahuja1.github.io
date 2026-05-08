@@ -1,0 +1,144 @@
+.projectsPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f3efdf;
+}
+
+.projectsPage .pageTitle {
+  font-size: 5em;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.accordion {
+  width: 100%;
+  margin: 12px 0;
+  border-top: 0.2em solid #3a3a3a;
+  border-bottom: 0.2em solid #3a3a3a;
+  background-color: #f3efdf;
+  overflow: hidden;
+}
+
+.accordion + .accordion {
+  margin-top: 10px;
+}
+
+.accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 600;
+  user-select: none;
+  background-color: #f3efdf;
+  list-style: none;
+}
+
+.accordion-summary img {
+  max-width: 25rem;
+  height: auto;
+}
+
+.accordion-summary .accordion-arrow {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.accordion-summary .accordion-arrow.open {
+  transform: rotate(90deg);
+}
+
+.accordion-panel {
+  padding: 0;
+}
+
+/* panel content shared styles */
+.panel-topSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10rem;
+  padding: 5rem;
+  margin-top: 2rem;
+}
+
+.panel-horizontalSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.panel-columnSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.panel-subHeading {
+  font-size: 1.5em;
+  font-family: 'Inter', serif;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.panel-screenshot {
+  max-width: 40rem;
+  border-radius: 15px;
+}
+
+.panel-screenshot-sm {
+  max-width: 20rem;
+  border-radius: 15px;
+}
+
+.panel-images-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.panel-githubLogo {
+  height: 7rem;
+  cursor: pointer;
+  filter: drop-shadow(0 0 15px rgba(93, 98, 161, 0.378))
+          drop-shadow(0 0 30px rgba(34, 34, 34, 0.094));
+  transition: transform 0.1s ease-in-out;
+}
+
+.panel-githubLogo:hover {
+  transform: scale(1.05);
+}
+
+.stolenPaintingLabel {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 15;
+  color: #3a3a3a;
+}
+
+.websiteLabel {
+  color: #01307c;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.pluginLabel {
+  color: #55017c;
+  font-size: 6rem;
+  line-height: 1;
+}

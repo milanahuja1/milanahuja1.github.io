@@ -1,0 +1,25 @@
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 94vh;
+}
+
+.contactTitle {
+  font-size: 5em;
+  text-align: center;
+  color: #670707;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: #670707;
+  font-size: 2rem;
+  font-family: Cascadia, monospace;
+}
+
+.contactLink:hover {
+  color: #d32b2b;
+}

@@ -1,0 +1,176 @@
+.musicPage {
+  background: #f3efdf;
+}
+
+.topBar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  column-gap: 48px;
+  padding: 20px 30px;
+  width: 100%;
+  background: #f3efdf;
+}
+
+.leftCloudBoundingBox,
+.rightCloudBoundingBox {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftCloudImage,
+.rightCloudImage {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 15px rgba(255, 102, 0, 0.314));
+}
+
+.leftCloudImage {
+  animation: cloudSwayLeft 6s ease-in-out infinite;
+  transform-origin: 50% 60%;
+  will-change: transform;
+}
+
+.rightCloudImage {
+  animation: cloudSwayRight 7.5s ease-in-out infinite;
+  transform-origin: 50% 60%;
+  will-change: transform;
+  animation-delay: 0.6s;
+}
+
+@keyframes cloudSwayLeft {
+  0%   { transform: translateY(0) rotate(-1.5deg); }
+  50%  { transform: translateY(6px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1.5deg); }
+}
+
+@keyframes cloudSwayRight {
+  0%   { transform: translateY(0) rotate(3deg); }
+  50%  { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(3deg); }
+}
+
+.footprintLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBar .footprintLogo img {
+  width: 800px;
+  height: auto;
+  animation: glowFade 2s infinite alternate;
+  filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4))
+          drop-shadow(0 0 30px rgba(255, 45, 8, 0.2));
+}
+
+@keyframes glowFade {
+  0% {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.431))
+            drop-shadow(0 0 30px rgba(255, 45, 8, 0.294));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.378))
+            drop-shadow(0 0 30px rgba(255, 45, 8, 0.094));
+  }
+}
+
+.albumRow {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.albumRow > * {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.albumMain {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 15px rgba(253, 144, 3, 0.4))
+          drop-shadow(0 0 30px rgba(249, 199, 0, 0.2));
+}
+
+.albumCover {
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.musicSubtitle {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  font-family: Cascadia, monospace;
+  color: #670707;
+  text-align: center;
+}
+
+.bodyText {
+  font-family: Cascadia, monospace;
+  color: #670707;
+  text-align: center;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.spotifyLogo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  filter: drop-shadow(0 0 15px rgba(16, 208, 86, 0.378))
+          drop-shadow(0 0 30px rgba(16, 255, 4, 0.094));
+  transition: transform 0.1s ease-in-out;
+}
+
+.spotifyLogo:hover {
+  transform: scale(1.05);
+}
+
+.youtubeLinkLogo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  filter: drop-shadow(0 0 15px rgba(208, 16, 16, 0.378))
+          drop-shadow(0 0 30px rgba(255, 4, 4, 0.094));
+  transition: transform 0.1s ease-in-out;
+}
+
+.youtubeLinkLogo:hover {
+  transform: scale(1.05);
+}
+
+.youtubeEmbed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2vh;
+  gap: 1vh;
+}

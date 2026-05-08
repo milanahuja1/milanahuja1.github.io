@@ -1,0 +1,17 @@
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <Link to="/" className="logo">MA</Link>
+      <ul className="nav-links">
+        <li><Link to="/projects">SOFTWARE PROJECTS</Link></li>
+        <li><Link to="/contact">CONTACT</Link></li>
+        <li><Link to="/music">MUSIC</Link></li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
