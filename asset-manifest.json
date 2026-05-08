@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.406bd31d.css",
+    "main.js": "/static/js/main.cf499e86.js",
+    "static/js/453.c2d6fd14.chunk.js": "/static/js/453.c2d6fd14.chunk.js",
+    "static/media/CascadiaCode.ttf": "/static/media/CascadiaCode.87b9342d78ef36540fd1.ttf",
+    "index.html": "/index.html",
+    "main.406bd31d.css.map": "/static/css/main.406bd31d.css.map",
+    "main.cf499e86.js.map": "/static/js/main.cf499e86.js.map",
+    "453.c2d6fd14.chunk.js.map": "/static/js/453.c2d6fd14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.406bd31d.css",
+    "static/js/main.cf499e86.js"
+  ]
+}
