@@ -174,3 +174,56 @@
   padding-bottom: 2vh;
   gap: 1vh;
 }
+
+.youtubeEmbed iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .topBar .footprintLogo img {
+    width: 90vw;
+  }
+
+  .leftCloudImage,
+  .rightCloudImage {
+    max-width: 60vw;
+  }
+
+  .albumRow {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .albumCover {
+    width: 60vw;
+    min-width: 60vw;
+  }
+
+  .albumMain {
+    max-width: 80vw;
+  }
+
+  .youtubeEmbed iframe {
+    width: 95vw;
+    height: calc(95vw * 9 / 16);
+  }
+
+  .linkContainer {
+    gap: 20px;
+  }
+
+  .spotifyLogo {
+    width: 140px;
+  }
+
+  .youtubeLinkLogo {
+    width: 160px;
+  }
+}

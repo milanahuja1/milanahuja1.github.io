@@ -23,3 +23,13 @@
 .contactLink:hover {
   color: #d32b2b;
 }
+
+@media (max-width: 600px) {
+  .contactTitle {
+    font-size: clamp(2.5rem, 12vw, 5rem);
+  }
+
+  .contactLink {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+  }
+}

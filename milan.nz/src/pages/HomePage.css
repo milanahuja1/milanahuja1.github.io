@@ -37,21 +37,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 900px;
   gap: 50px;
   margin: 40px auto;
 }
 
 .aboutPageText {
-  margin: 10vm;
   font-family: Cascadia, monospace;
   font-weight: normal;
   color: #670707;
-  flex: 1;
-  min-width: 0;
   font-size: 2.5rem;
   line-height: 1.6;
+  text-align: center;
+  width: fit-content;
 }
 
 .profilePicture {
@@ -71,11 +70,32 @@
 @media (max-width: 900px) {
   .homeContent {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .profilePicture {
+  .profilePicture,
+  .rectanglePicture {
     width: 100%;
-    max-width: 650px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeTitle {
+    font-size: clamp(2rem, 12vw, 5rem);
+  }
+
+  .arrow {
+    font-size: clamp(4rem, 30vw, 10rem);
+  }
+
+  .aboutPageText {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .homeContent {
+    padding: 0 1.5rem;
+    gap: 20px;
   }
 }

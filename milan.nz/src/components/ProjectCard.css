@@ -1,0 +1,194 @@
+.project-card {
+  background: #faf8f2;
+  border-radius: 16px;
+  border: 1.5px solid #d9d3c0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 24px rgba(103, 7, 7, 0.1);
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  user-select: none;
+  height: 8rem;
+}
+
+.project-card-header:focus-visible {
+  outline: 2px solid #670707;
+  outline-offset: -2px;
+}
+
+.project-card-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.project-card-label img {
+  max-width: 16rem;
+  max-height: 5rem;
+  object-fit: contain;
+}
+
+.project-card-chevron {
+  font-size: 1.1rem;
+  color: #670707;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.project-card-chevron.open {
+  transform: rotate(90deg);
+}
+
+.project-card-body {
+  border-top: 1.5px solid #d9d3c0;
+  padding: 2.5rem 3rem;
+  background: #fff;
+}
+
+/* content layout inside cards */
+.card-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card-section:last-child {
+  margin-bottom: 0;
+}
+
+.card-section img.card-screenshot {
+  width: 45%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.card-section img.card-screenshot-sm {
+  width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.card-text {
+  flex: 1;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 1.7;
+}
+
+.card-phones-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 1.5px solid #670707;
+  border-radius: 8px;
+  color: #670707;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  background: transparent;
+}
+
+.card-github:hover {
+  background: #670707;
+  color: #fff;
+}
+
+.card-github img {
+  height: 1.2rem;
+  filter: invert(13%) sepia(80%) saturate(2000%) hue-rotate(340deg);
+  transition: filter 0.15s ease;
+}
+
+.card-github:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* label styles */
+.card-label-stolen {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
+.card-label-website {
+  font-family: Cascadia, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #01307c;
+}
+
+.card-label-plugin {
+  font-family: Cascadia, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #55017c;
+}
+
+@media (max-width: 768px) {
+  .project-card-header {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .project-card-body {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .card-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-section img.card-screenshot {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-phones-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-section img.card-screenshot-sm {
+    width: 80%;
+  }
+
+  .project-card-label img {
+    max-width: 55vw;
+  }
+}
