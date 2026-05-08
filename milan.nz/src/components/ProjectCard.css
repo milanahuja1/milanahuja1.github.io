@@ -22,7 +22,7 @@
 }
 
 .project-card-header:focus-visible {
-  outline: 2px solid #670707;
+  outline: 2px solid #921010;
   outline-offset: -2px;
 }
 
@@ -42,7 +42,7 @@
 
 .project-card-chevron {
   font-size: 1.1rem;
-  color: #670707;
+  color: #921010;
   transition: transform 0.25s ease;
   flex-shrink: 0;
   margin-left: 1rem;
@@ -110,9 +110,9 @@
   gap: 0.5rem;
   margin-top: 1rem;
   padding: 0.5rem 1.2rem;
-  border: 1.5px solid #670707;
+  border: 1.5px solid #921010;
   border-radius: 8px;
-  color: #670707;
+  color: #921010;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
@@ -123,7 +123,7 @@
 }
 
 .card-github:hover {
-  background: #670707;
+  background: #921010;
   color: #fff;
 }
 

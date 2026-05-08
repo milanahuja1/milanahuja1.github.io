@@ -1,4 +1,5 @@
 import { useRef, useState, useCallback } from 'react';
+import { useScrollReveal } from './useScrollReveal';
 import './PhotoReveal.css';
 
 const PICS = [
@@ -49,16 +50,9 @@ function PhotoReveal({ children, className = '' }) {
   const idRef = useRef(0);
   const [images, setImages] = useState([]);
 
-  const handleMouseMove = useCallback((e) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const dx = x - lastPos.current.x;
-    const dy = y - lastPos.current.y;
-    if (Math.sqrt(dx * dx + dy * dy) < MIN_DISTANCE) return;
-
-    lastPos.current = { x, y };
+  const spawn = useCallback((x, y) => {
+    const rect = containerRef.current?.getBoundingClientRect();
+    if (!rect) return;
 
     const pic = PICS[indexRef.current % PICS.length];
     indexRef.current++;
@@ -68,9 +62,6 @@ function PhotoReveal({ children, className = '' }) {
     const offsetX = (Math.random() - 0.5) * 40;
     const offsetY = (Math.random() - 0.5) * 40;
 
-    // skip if the image would clip the section edges.
-    // photos can be portrait (taller than wide) and rotated up to 15deg,
-    // so use a generous height/width buffer based on size.
     const finalX = x + offsetX;
     const finalY = y + offsetY;
     const halfW = size * 0.75;
@@ -97,6 +88,21 @@ function PhotoReveal({ children, className = '' }) {
       setImages(prev => prev.filter(img => img.id !== id));
     }, LIFETIME_MS);
   }, []);
+
+  const handleMouseMove = useCallback((e) => {
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const dx = x - lastPos.current.x;
+    const dy = y - lastPos.current.y;
+    if (Math.sqrt(dx * dx + dy * dy) < MIN_DISTANCE) return;
+
+    lastPos.current = { x, y };
+    spawn(x, y);
+  }, [spawn]);
+
+  useScrollReveal(containerRef, spawn);
 
   return (
     <div

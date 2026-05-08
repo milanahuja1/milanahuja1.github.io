@@ -13,7 +13,7 @@
 .musicNote {
   position: absolute;
   font-family: 'Cascadia', monospace;
-  color: #670707;
+  color: #921010;
   pointer-events: none;
   user-select: none;
   line-height: 1;

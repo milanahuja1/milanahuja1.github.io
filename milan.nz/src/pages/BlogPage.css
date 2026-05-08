@@ -31,13 +31,13 @@
 
 .post-card:hover {
   box-shadow: 0 4px 20px rgba(103, 7, 7, 0.1);
-  border-color: #670707;
+  border-color: #921010;
 }
 
 .post-card-title {
   font-size: 1.4rem;
   font-family: Cascadia, monospace;
-  color: #670707;
+  color: #921010;
   margin: 0 0 0.4rem 0;
 }
 

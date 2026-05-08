@@ -17,7 +17,7 @@
   font-size: 600%;
   font-family: Cascadia, monospace;
   font-weight: 600;
-  color: #670707;
+  color: #921010;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -28,7 +28,7 @@
   font-size: 1500%;
   font-family: 'Inter', serif;
   font-weight: 600;
-  color: #670707;
+  color: #921010;
   line-height: 1;
   text-decoration: none;
   display: block;
@@ -53,7 +53,7 @@
 .aboutPageText {
   font-family: Cascadia, monospace;
   font-weight: normal;
-  color: #670707;
+  color: #921010;
   font-size: 2.5rem;
   line-height: 1.6;
   text-align: center;
@@ -89,9 +89,9 @@
 .homeButton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  border: 1.5px solid #670707;
+  border: 1.5px solid #921010;
   border-radius: 10px;
-  color: #670707;
+  color: #921010;
   font-family: Cascadia, monospace;
   font-size: 1.1rem;
   font-weight: 600;
@@ -101,7 +101,7 @@
 }
 
 .homeButton:hover {
-  background: #670707;
+  background: #921010;
   color: #f3efdf;
 }
 

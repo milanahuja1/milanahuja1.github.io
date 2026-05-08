@@ -17,7 +17,7 @@
 .contactTitle {
   font-size: clamp(2.5rem, 8vw, 5rem);
   text-align: center;
-  color: #670707;
+  color: #921010;
   margin: 0 0 1.5rem 0;
   letter-spacing: 0.08em;
 }
@@ -35,12 +35,12 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  color: #670707;
+  color: #921010;
   font-size: 1.1rem;
   font-family: Cascadia, monospace;
   font-weight: 600;
   padding: 1rem 1.5rem;
-  border: 1.5px solid #670707;
+  border: 1.5px solid #921010;
   border-radius: 12px;
   background: transparent;
   transition: background 0.15s ease, color 0.15s ease;
@@ -48,7 +48,7 @@
 }
 
 .contactLink:hover {
-  background: #670707;
+  background: #921010;
   color: #f3efdf;
 }
 

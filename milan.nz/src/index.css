@@ -16,12 +16,12 @@ html, body {
   background: #f3efdf;
   font-family: Cascadia, monospace;
   font-weight: 600;
-  color: #670707;
+  color: #921010;
   scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #670707;
+  color: #921010;
 }
 
 a {
@@ -30,16 +30,16 @@ a {
 }
 
 a:hover {
-  color: #670707;
+  color: #921010;
 }
 
 p {
-  color: #670707;
+  color: #921010;
 }
 
 .linkText {
   text-decoration: none;
-  color: #670707;
+  color: #921010;
 }
 
 .linkText:hover {

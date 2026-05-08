@@ -1,9 +1,10 @@
 import { useRef, useState, useCallback } from 'react';
+import { useScrollReveal } from './useScrollReveal';
 import './MusicReveal.css';
 
 const NOTES = ['♪', '♫', '♬', '♩', '♭', '♮', '♯', '𝄞', '𝄢'];
 
-const COLORS = ['#670707', '#01307c', '#55017c', '#0a6b3b', '#c46a14', '#045d6b', '#aa1457', '#3a3a3a'];
+const COLORS = ['#921010', '#01307c', '#55017c', '#0a6b3b', '#c46a14', '#045d6b', '#aa1457', '#3a3a3a'];
 
 const MAX = 25;
 const MIN_DISTANCE = 30;
@@ -16,17 +17,7 @@ function MusicReveal({ children, className = '' }) {
   const idRef = useRef(0);
   const [items, setItems] = useState([]);
 
-  const handleMouseMove = useCallback((e) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const dx = x - lastPos.current.x;
-    const dy = y - lastPos.current.y;
-    if (Math.sqrt(dx * dx + dy * dy) < MIN_DISTANCE) return;
-
-    lastPos.current = { x, y };
-
+  const spawn = useCallback((x, y) => {
     const note = NOTES[indexRef.current % NOTES.length];
     indexRef.current++;
 
@@ -46,6 +37,21 @@ function MusicReveal({ children, className = '' }) {
       setItems(prev => prev.filter(it => it.id !== id));
     }, LIFETIME_MS);
   }, []);
+
+  const handleMouseMove = useCallback((e) => {
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const dx = x - lastPos.current.x;
+    const dy = y - lastPos.current.y;
+    if (Math.sqrt(dx * dx + dy * dy) < MIN_DISTANCE) return;
+
+    lastPos.current = { x, y };
+    spawn(x, y);
+  }, [spawn]);
+
+  useScrollReveal(containerRef, spawn);
 
   return (
     <div

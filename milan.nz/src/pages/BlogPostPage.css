@@ -16,7 +16,7 @@
   display: inline-block;
   font-family: Cascadia, monospace;
   font-size: 0.95rem;
-  color: #670707;
+  color: #921010;
   text-decoration: none;
   margin-bottom: 2rem;
   transition: opacity 0.15s ease;
@@ -56,6 +56,6 @@
 .blogPost-404 {
   text-align: center;
   padding: 4rem 1rem;
-  color: #670707;
+  color: #921010;
   font-family: Cascadia, monospace;
 }
