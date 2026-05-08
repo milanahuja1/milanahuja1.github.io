@@ -32,6 +32,7 @@ function ProjectsPage() {
       <Navbar />
       <p className="pageTitle">SOFTWARE PROJECTS</p>
 
+      <div className="accordions">
       {/* Vroomly */}
       <Accordion summary={
         <img src="/projectsPage/vroomly/vroomlyLogo.png" alt="Vroomly logo" draggable="false" />
@@ -159,6 +160,7 @@ function ProjectsPage() {
         </div>
       </Accordion>
 
+      </div>
       <Footer />
     </div>
   );

@@ -5,3 +5,7 @@
   text-align: center;
   justify-content: center;
 }
+
+.footer p {
+  color: white;
+}

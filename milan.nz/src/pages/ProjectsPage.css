@@ -5,10 +5,13 @@
   background: #f3efdf;
 }
 
+.projectsPage .accordions {
+  flex: 1;
+}
+
 .projectsPage .pageTitle {
   font-size: 5em;
   text-align: center;
-  color: #333;
   margin: 0;
   padding: 0.5em 0;
 }
