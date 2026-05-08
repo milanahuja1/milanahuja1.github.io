@@ -20,7 +20,7 @@ function HomePage() {
       </div>
 
       <div ref={firstImageRef} className="homeContent">
-        <img src="/homePage/images/bike.png" alt="A picture of Milan" className="profilePicture" />
+        <img src="/homePage/images/bike.png" alt="Milan on a bike" className="profilePicture" />
       </div>
       <div className="homeContent">
         <p className="aboutPageText">Hi, I'm Milan. (米兰)</p>
