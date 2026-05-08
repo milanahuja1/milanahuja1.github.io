@@ -1,5 +1,4 @@
 import ProjectCard from '../components/ProjectCard';
-import GithubButton from '../components/GithubButton';
 
 function GestureXCard() {
   return (
