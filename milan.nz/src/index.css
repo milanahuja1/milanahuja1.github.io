@@ -45,3 +45,45 @@ p {
 .linkText:hover {
   color: #d32b2b;
 }
+
+/* Dark mode (triggered by scrolling to band gallery) */
+html, body {
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+body.dark-mode {
+  background: #0f0f10;
+  color: #f3efdf;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .musicPage,
+body.dark-mode .topBar {
+  background: #0f0f10;
+  transition: background 0.6s ease;
+}
+
+body.dark-mode .nav-links li a,
+body.dark-mode .logo {
+  color: #f3efdf;
+  transition: color 0.6s ease;
+}
+
+body.dark-mode .musicSubtitle,
+body.dark-mode .bodyText,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+  color: #f3efdf;
+  transition: color 0.6s ease;
+}
+
+body.dark-mode .footer p {
+  color: white;
+}
+
+body.dark-mode .darkSection {
+  background: #0f0f10;
+  transition: background 0.6s ease;
+}

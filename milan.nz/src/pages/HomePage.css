@@ -119,6 +119,10 @@
   border-radius: 10px;
 }
 
+.rectanglePicture--small {
+  width: clamp(304px, 24vw, 680px);
+}
+
 @media (max-width: 900px) {
   .homeContent {
     flex-direction: column;

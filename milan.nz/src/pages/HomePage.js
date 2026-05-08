@@ -44,7 +44,7 @@ function HomePage() {
 
       <MusicReveal className="musicSection">
         <div className="homeContent">
-          <img src="/homePage/images/guitar.gif" alt="GIF of Milan playing the guitar" className="rectanglePicture" />
+          <img src="/homePage/images/guitar.gif" alt="GIF of Milan playing the guitar" className="rectanglePicture rectanglePicture--small" />
           <div className="homeContentText">
             <p className="aboutPageText">I also play the guitar in a band called footprint.</p>
             <Link to="/music" className="homeButton">Music →</Link>

@@ -111,6 +111,46 @@
   border-radius: 20px;
 }
 
+.darkSection {
+  width: 100%;
+}
+
+.bandPicsGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 3rem 0 0 0;
+  width: 100%;
+}
+
+.bandPic {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.bandPic:nth-child(5) {
+  grid-column: 1 / -1;
+  height: 80vh;
+}
+
+.bandPic:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .bandPicsGallery {
+    grid-template-columns: 1fr;
+  }
+
+  .bandPic,
+  .bandPic:nth-child(5) {
+    height: 70vh;
+  }
+}
+
 .musicSubtitle {
   display: flex;
   padding: 20px;
@@ -167,16 +207,19 @@
 }
 
 .youtubeEmbed {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 2vh;
-  gap: 1vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 0 0 0;
+  width: 100%;
 }
 
 .youtubeEmbed iframe {
-  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border: none;
 }
 
 @media (max-width: 768px) {
@@ -210,9 +253,14 @@
     max-width: 80vw;
   }
 
+  .youtubeEmbed {
+    grid-template-columns: 1fr;
+  }
+
   .youtubeEmbed iframe {
-    width: 95vw;
-    height: calc(95vw * 9 / 16);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
   }
 
   .linkContainer {
