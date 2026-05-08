@@ -9,6 +9,7 @@ function Navbar() {
         <li><Link to="/projects">SOFTWARE PROJECTS</Link></li>
         <li><Link to="/contact">CONTACT</Link></li>
         <li><Link to="/music">MUSIC</Link></li>
+        <li><Link to="/blog">BLOG</Link></li>
       </ul>
     </nav>
   );
