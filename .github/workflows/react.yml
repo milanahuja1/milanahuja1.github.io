@@ -24,6 +24,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: milan.nz/package-lock.json
     - run: npm ci
+      working-directory: milan.nz
     - run: npm run build --if-present
+      working-directory: milan.nz
     - run: npm test
+      working-directory: milan.nz
