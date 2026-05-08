@@ -1,0 +1,34 @@
+.codeReveal {
+  position: relative;
+}
+
+.codeReveal-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.codeSnippet {
+  position: absolute;
+  margin: 0;
+  font-family: Cascadia, monospace;
+  color: rgba(103, 7, 7, 0.85);
+  background: rgba(243, 239, 223, 0.6);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  animation: codePopIn 0.12s ease-out forwards, codeFadeOut 0.4s ease-in forwards 0.8s;
+}
+
+@keyframes codePopIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes codeFadeOut {
+  to { opacity: 0; }
+}

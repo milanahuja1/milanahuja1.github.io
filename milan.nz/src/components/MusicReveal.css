@@ -1,0 +1,38 @@
+.musicReveal {
+  position: relative;
+}
+
+.musicReveal-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.musicNote {
+  position: absolute;
+  font-family: 'Cascadia', monospace;
+  color: #670707;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  animation: musicPopIn 0.15s ease-out forwards, musicFadeOut 0.4s ease-in forwards 0.8s;
+}
+
+@keyframes musicPopIn {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes musicFadeOut {
+  to {
+    opacity: 0;
+  }
+}

@@ -1,6 +1,7 @@
 .homePage {}
 
 .topSectionContainer {
+  position: relative;
   width: 100vw;
   height: 90vh;
   padding: 1vh 1vw;
@@ -9,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .homeTitle {
@@ -17,6 +19,9 @@
   font-weight: 600;
   color: #670707;
   text-align: center;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .arrow {
@@ -31,6 +36,8 @@
   cursor: pointer;
   background: none;
   border: none;
+  position: relative;
+  z-index: 2;
 }
 
 .homeContent {
@@ -51,6 +58,51 @@
   line-height: 1.6;
   text-align: center;
   width: fit-content;
+}
+
+
+.homeContentText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.codingSection,
+.musicSection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.codingSection > .homeContent,
+.musicSection > .homeContent {
+  position: relative;
+  z-index: 1;
+}
+
+.introReveal > .topSectionContainer,
+.introReveal > .homeContent {
+  position: relative;
+  z-index: 2;
+}
+
+.homeButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1.5px solid #670707;
+  border-radius: 10px;
+  color: #670707;
+  font-family: Cascadia, monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.homeButton:hover {
+  background: #670707;
+  color: #f3efdf;
 }
 
 .profilePicture {

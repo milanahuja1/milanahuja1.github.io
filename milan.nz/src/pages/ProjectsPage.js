@@ -11,7 +11,7 @@ function ProjectsPage() {
   return (
     <div className="projectsPage">
       <Navbar />
-      <p className="pageTitle">SOFTWARE PROJECTS</p>
+      <p className="pageTitle">PROJECTS</p>
       <div className="accordions">
         <VroomlyCard />
         <GestureXCard />
