@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './MusicPage.css';
@@ -13,6 +13,14 @@ const BAND_PICS = [
 
 function MusicPage() {
   const galleryRef = useRef(null);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
+
+  useEffect(() => {
+    if (!lightboxSrc) return;
+    const onKey = (e) => { if (e.key === 'Escape') setLightboxSrc(null); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [lightboxSrc]);
 
   useEffect(() => {
     const el = galleryRef.current;
@@ -58,18 +66,18 @@ function MusicPage() {
       <p className="bodyText">It's really cool and you should listen to it on Spotify or YouTube.</p>
 
       <div className="linkContainer">
-        <div>
+        <a href="https://open.spotify.com/album/0IcJ6YotAaglvsmCpBg6qh?si=bsdE0D-AR12QI5TcdneohA" target="_blank" rel="noreferrer">
           <img src="/musicPage/spotify.png" className="spotifyLogo" alt="Spotify logo" />
-        </div>
-        <div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=exekHnjoyoM&list=PLWw3ZlyPoHmEEkE2xXz9ZhMaNR-wu_OFy" target="_blank" rel="noreferrer">
           <img src="/musicPage/youtube.png" className="youtubeLinkLogo" alt="YouTube logo" />
-        </div>
+        </a>
       </div>
 
       <div ref={galleryRef} className="darkSection">
         <div className="bandPicsGallery">
           {BAND_PICS.map((src, i) => (
-            <img key={i} src={src} alt="Footprint band" className="bandPic" />
+            <img key={i} src={src} alt="Footprint band" className="bandPic" onClick={() => setLightboxSrc(src)} />
           ))}
         </div>
 
@@ -82,6 +90,12 @@ function MusicPage() {
       </div>
 
       <Footer />
+
+      {lightboxSrc && (
+        <div className="lightboxOverlay" onClick={() => setLightboxSrc(null)}>
+          <img src={lightboxSrc} alt="Footprint band" className="lightboxImg" />
+        </div>
+      )}
     </div>
   );
 }
