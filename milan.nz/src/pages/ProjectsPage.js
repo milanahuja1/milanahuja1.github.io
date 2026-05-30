@@ -13,11 +13,11 @@ function ProjectsPage() {
       <Navbar />
       <p className="pageTitle">PROJECTS</p>
       <div className="accordions">
-        <VroomlyCard />
-        <GestureXCard />
-        <StolenPaintingCard />
-        <MilanNzCard />
         <EQPluginCard />
+        <MilanNzCard />
+        <GestureXCard />
+        <VroomlyCard />
+        <StolenPaintingCard />
       </div>
       <Footer />
     </div>
