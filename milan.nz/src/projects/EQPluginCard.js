@@ -7,7 +7,7 @@ function EQPluginCard() {
       <span className="card-label-plugin">EQ Plugin</span>
     }>
       <div className="card-section">
-        <img src="/projectsPage/plugin/EQ-Plugin.jpeg" className="card-screenshot" alt="EQ Plugin interface" />
+        <img src="/projectsPage/plugin/eq-plugin.gif" className="card-screenshot" alt="EQ Plugin interface" />
         <div className="card-text">
           <p>A work in progress equaliser plugin built with JUCE while learning C++, real-time audio processing, and the structure of a modern VST project.</p>
           <p>The current build includes low and high cut filters, a peak band, custom rotary controls, and a live frequency response curve so changes can be heard and seen while shaping a sound.</p>
