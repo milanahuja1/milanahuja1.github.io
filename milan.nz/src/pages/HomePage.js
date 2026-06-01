@@ -15,7 +15,7 @@ function HomePage() {
       <Navbar />
       <PhotoReveal className="introReveal">
         <div className="topSectionContainer">
-          <h1 className="homeTitle">Welcome to Milan's Website</h1>
+          <h1 className="homeTitle">welcome to milan's website</h1>
           <button
             className="arrow"
             onClick={() => firstImageRef.current?.scrollIntoView({ behavior: 'smooth' })}
