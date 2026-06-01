@@ -1,9 +1,9 @@
 .musicPage {
-  background: var(--color-music-top-bg);
+  background: var(--color-night);
 }
 
 .musicPage .navbar {
-  background: var(--color-music-top-bg);
+  background: var(--color-night);
 }
 
 .musicIntro {
@@ -14,7 +14,7 @@
   gap: clamp(2rem, 6vw, 6rem);
   min-height: min(68vh, 720px);
   padding: clamp(3rem, 7vw, 6rem) 2rem clamp(2rem, 5vw, 4rem);
-  background: var(--color-music-top-bg);
+  background: var(--color-night);
   overflow: hidden;
 }
 
@@ -53,7 +53,7 @@
   font-family: Cascadia, monospace;
   font-size: clamp(2.4rem, 5.8vw, 5.4rem);
   line-height: 1.02;
-  color: var(--color-text);
+  color: var(--color-overlay-text);
   text-align: left;
 }
 
@@ -64,7 +64,7 @@
   font-size: clamp(1rem, 1.6vw, 1.25rem);
   font-weight: 500;
   line-height: 1.55;
-  color: var(--color-text-soft);
+  color: var(--color-overlay-text);
 }
 
 .musicIntroImageFrame {
@@ -102,7 +102,7 @@
   column-gap: 48px;
   padding: 20px 30px;
   width: 100%;
-  background: var(--color-music-top-bg);
+  background: var(--color-night);
 }
 
 .leftCloudBoundingBox,

@@ -16,29 +16,16 @@ function MusicPage() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
 
   useEffect(() => {
+    document.body.classList.add('dark-mode');
+    return () => document.body.classList.remove('dark-mode');
+  }, []);
+
+  useEffect(() => {
     if (!lightboxSrc) return;
     const onKey = (e) => { if (e.key === 'Escape') setLightboxSrc(null); };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [lightboxSrc]);
-
-  useEffect(() => {
-    const el = galleryRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        document.body.classList.toggle('dark-mode', entry.isIntersecting);
-      },
-      { threshold: 0.05 }
-    );
-
-    observer.observe(el);
-    return () => {
-      observer.disconnect();
-      document.body.classList.remove('dark-mode');
-    };
-  }, []);
 
   useEffect(() => {
     const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
