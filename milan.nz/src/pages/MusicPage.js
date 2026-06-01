@@ -40,9 +40,37 @@ function MusicPage() {
     };
   }, []);
 
+  useEffect(() => {
+    const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+
+    if (existingScript) {
+      window.instgrm?.Embeds?.process();
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.instagram.com/embed.js';
+    script.onload = () => window.instgrm?.Embeds?.process();
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="musicPage" style={{ cursor: "url('/musicPage/foot.png') 0 0, auto" }}>
       <Navbar />
+
+      <section className="musicIntro">
+        <div className="musicIntroText">
+          <p className="musicIntroKicker">GUITAR</p>
+          <h1>I started playing the guitar when I was 10 and never looked back</h1>
+          <p className="musicIntroBody">
+            I've played a range of genres from metalcore to neo soul. Check out my current project Footprint:
+          </p>
+        </div>
+        <div className="musicIntroImageFrame">
+          <img src="/musicPage/firstpic.jpg" alt="Milan playing guitar" className="musicIntroImage" />
+        </div>
+      </section>
 
       <div className="topBar">
         <div className="leftCloudBoundingBox">
@@ -79,6 +107,19 @@ function MusicPage() {
           {BAND_PICS.map((src, i) => (
             <img key={i} src={src} alt="Footprint band" className="bandPic" onClick={() => setLightboxSrc(src)} />
           ))}
+        </div>
+
+        <div className="instagramEmbedSection">
+          <blockquote
+            className="instagram-media"
+            data-instgrm-captioned=""
+            data-instgrm-permalink="https://www.instagram.com/reel/C8YgyDAycSL/"
+            data-instgrm-version="14"
+          >
+            <a href="https://www.instagram.com/reel/C8YgyDAycSL/" target="_blank" rel="noreferrer">
+              View this post on Instagram
+            </a>
+          </blockquote>
         </div>
 
         <div className="youtubeEmbed">
