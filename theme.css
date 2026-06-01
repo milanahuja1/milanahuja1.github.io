@@ -1,0 +1,43 @@
+:root {
+  --color-bg: #e3f1fa;
+  --color-surface: #eff9ff;
+  --color-surface-strong: #f6fbff;
+  --color-text: #0b3f72;
+  --color-text-soft: #2c638f;
+  --color-link: #1f5f99;
+  --color-link-hover: #082f58;
+  --color-border: #9fceee;
+  --color-shadow: rgba(11, 63, 114, 0.12);
+  --color-overlay-text: #f4fbff;
+  --color-night: #0f0f10;
+  --color-footer-bg: #031524;
+
+  --color-project-card-bg: #e8f7ff;
+  --color-project-card-body-bg: #f1faff;
+  --color-project-text: #3a3a3a;
+  --color-project-brand-red: #921010;
+  --color-project-website: #01307c;
+  --color-project-plugin: #c46a14;
+  --color-project-plugin-legacy: #55017c;
+  --color-project-button-hover-text: #fff;
+  --color-project-image-shadow: rgba(0, 0, 0, 0.1);
+  --color-project-logo-glow: rgba(31, 95, 153, 0.32);
+  --color-project-logo-glow-soft: rgba(11, 63, 114, 0.1);
+
+  --color-code-reveal-text: rgba(11, 63, 114, 0.85);
+  --color-code-reveal-bg: rgba(223, 243, 255, 0.72);
+
+  --color-music-cloud-glow: rgba(31, 95, 153, 0.28);
+  --color-music-album-glow: rgba(31, 95, 153, 0.35);
+  --color-music-album-glow-soft: rgba(11, 63, 114, 0.18);
+  --color-music-link-glow: rgba(31, 95, 153, 0.34);
+  --color-music-link-glow-soft: rgba(11, 63, 114, 0.1);
+  --color-footprint-glow: rgba(255, 0, 0, 0.4);
+  --color-footprint-glow-soft: rgba(255, 45, 8, 0.2);
+  --color-footprint-glow-from: rgba(255, 0, 0, 0.431);
+  --color-footprint-glow-from-soft: rgba(255, 45, 8, 0.294);
+  --color-footprint-glow-to: rgba(255, 0, 0, 0.378);
+  --color-footprint-glow-to-soft: rgba(255, 45, 8, 0.094);
+  --color-lightbox-backdrop: rgba(0, 0, 0, 0.85);
+  --color-lightbox-shadow: rgba(0, 0, 0, 0.8);
+}

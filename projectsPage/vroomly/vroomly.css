@@ -1,9 +1,11 @@
+@import url('/theme.css');
+
 .headingText{
   font-size: 3em;
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: normal;
-  color: #333;
+  color: var(--color-text);
   text-align: center;
   margin-top: 20px;
 }
@@ -12,7 +14,7 @@
   font-family: "Inter", serif;
   font-weight: 500;
   font-style: normal;
-  color: #333;
+  color: var(--color-text);
   text-align: center;
   margin-top: 20px;
 }
@@ -31,13 +33,13 @@
 }
 
 body.vroomly{
-    background: #ffffff;
+    background: var(--color-bg);
 }
 
 .githubLogo{
   height: 7rem;
-  filter: drop-shadow(0 0 15px rgba(93, 98, 161, 0.378))
-          drop-shadow(0 0 30px rgba(34, 34, 34, 0.094));
+  filter: drop-shadow(0 0 15px var(--color-project-logo-glow))
+          drop-shadow(0 0 30px var(--color-project-logo-glow-soft));
 
 }
 
