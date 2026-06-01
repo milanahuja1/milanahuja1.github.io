@@ -1,11 +1,11 @@
 .footer {
-  background-color: #921010;
-  color: white;
+  background-color: var(--color-footer-bg);
+  color: var(--color-overlay-text);
   padding: 0.05vh;
   text-align: center;
   justify-content: center;
 }
 
 .footer p {
-  color: white;
+  color: var(--color-overlay-text);
 }

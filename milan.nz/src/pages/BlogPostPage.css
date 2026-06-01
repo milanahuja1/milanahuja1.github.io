@@ -16,7 +16,7 @@
   display: inline-block;
   font-family: Cascadia, monospace;
   font-size: 0.95rem;
-  color: #921010;
+  color: var(--color-text);
   text-decoration: none;
   margin-bottom: 2rem;
   transition: opacity 0.15s ease;
@@ -36,7 +36,7 @@
   font-size: 0.85rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #999;
+  color: var(--color-text-soft);
   margin: 0 0 2.5rem 0;
 }
 
@@ -44,18 +44,18 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #3a3a3a;
+  color: var(--color-text-soft);
   line-height: 1.8;
 }
 
 .blogPost-body p {
-  color: #3a3a3a;
+  color: var(--color-text-soft);
   margin: 0 0 1.2rem 0;
 }
 
 .blogPost-404 {
   text-align: center;
   padding: 4rem 1rem;
-  color: #921010;
+  color: var(--color-text);
   font-family: Cascadia, monospace;
 }

@@ -1,5 +1,9 @@
 .musicPage {
-  background: #f3efdf;
+  background: var(--color-music-top-bg);
+}
+
+.musicPage .navbar {
+  background: var(--color-music-top-bg);
 }
 
 .topBar {
@@ -11,7 +15,7 @@
   column-gap: 48px;
   padding: 20px 30px;
   width: 100%;
-  background: #f3efdf;
+  background: var(--color-music-top-bg);
 }
 
 .leftCloudBoundingBox,
@@ -29,7 +33,7 @@
   max-width: 350px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 0 15px rgba(255, 102, 0, 0.314));
+  filter: drop-shadow(0 0 15px var(--color-music-cloud-glow));
 }
 
 .leftCloudImage {
@@ -67,18 +71,18 @@
   width: 800px;
   height: auto;
   animation: glowFade 2s infinite alternate;
-  filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4))
-          drop-shadow(0 0 30px rgba(255, 45, 8, 0.2));
+  filter: drop-shadow(0 0 15px var(--color-footprint-glow))
+          drop-shadow(0 0 30px var(--color-footprint-glow-soft));
 }
 
 @keyframes glowFade {
   0% {
-    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.431))
-            drop-shadow(0 0 30px rgba(255, 45, 8, 0.294));
+    filter: drop-shadow(0 0 15px var(--color-footprint-glow-from))
+            drop-shadow(0 0 30px var(--color-footprint-glow-from-soft));
   }
   100% {
-    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.378))
-            drop-shadow(0 0 30px rgba(255, 45, 8, 0.094));
+    filter: drop-shadow(0 0 15px var(--color-footprint-glow-to))
+            drop-shadow(0 0 30px var(--color-footprint-glow-to-soft));
   }
 }
 
@@ -101,8 +105,8 @@
   align-items: center;
   max-width: 450px;
   margin: 0 auto;
-  filter: drop-shadow(0 0 15px rgba(253, 144, 3, 0.4))
-          drop-shadow(0 0 30px rgba(249, 199, 0, 0.2));
+  filter: drop-shadow(0 0 15px var(--color-music-album-glow))
+          drop-shadow(0 0 30px var(--color-music-album-glow-soft));
 }
 
 .albumCover {
@@ -144,7 +148,7 @@
 .lightboxOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--color-lightbox-backdrop);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +162,7 @@
   max-height: 90vh;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 60px var(--color-lightbox-shadow);
 }
 
 @keyframes fadeIn {
@@ -186,13 +190,13 @@
   max-width: 450px;
   margin: 0 auto;
   font-family: Cascadia, monospace;
-  color: #921010;
+  color: var(--color-text);
   text-align: center;
 }
 
 .bodyText {
   font-family: Cascadia, monospace;
-  color: #921010;
+  color: var(--color-text);
   text-align: center;
 }
 
@@ -209,8 +213,8 @@
   height: auto;
   display: block;
   margin: 20px auto;
-  filter: drop-shadow(0 0 15px rgba(16, 208, 86, 0.378))
-          drop-shadow(0 0 30px rgba(16, 255, 4, 0.094));
+  filter: drop-shadow(0 0 15px var(--color-music-link-glow))
+          drop-shadow(0 0 30px var(--color-music-link-glow-soft));
   transition: transform 0.1s ease-in-out;
 }
 
@@ -223,8 +227,8 @@
   height: auto;
   display: block;
   margin: 20px auto;
-  filter: drop-shadow(0 0 15px rgba(208, 16, 16, 0.378))
-          drop-shadow(0 0 30px rgba(255, 4, 4, 0.094));
+  filter: drop-shadow(0 0 15px var(--color-music-link-glow))
+          drop-shadow(0 0 30px var(--color-music-link-glow-soft));
   transition: transform 0.1s ease-in-out;
 }
 

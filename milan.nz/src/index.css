@@ -14,37 +14,37 @@
 html, body {
   margin: 0;
   overflow-x: hidden;
-  background: #f3efdf;
+  background: var(--color-bg);
   font-family: Cascadia, monospace;
   font-weight: 600;
-  color: #921010;
+  color: var(--color-text);
   scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #921010;
+  color: var(--color-text);
 }
 
 a {
-  color: #c4314c;
+  color: var(--color-link);
   text-decoration: none;
 }
 
 a:hover {
-  color: #921010;
+  color: var(--color-link-hover);
 }
 
 p {
-  color: #921010;
+  color: var(--color-text);
 }
 
 .linkText {
   text-decoration: none;
-  color: #921010;
+  color: var(--color-text);
 }
 
 .linkText:hover {
-  color: #d32b2b;
+  color: var(--color-link-hover);
 }
 
 /* Dark mode (triggered by scrolling to band gallery) */
@@ -53,20 +53,20 @@ html, body {
 }
 
 body.dark-mode {
-  background: #0f0f10;
-  color: #f3efdf;
+  background: var(--color-night);
+  color: var(--color-overlay-text);
 }
 
 body.dark-mode .navbar,
 body.dark-mode .musicPage,
 body.dark-mode .topBar {
-  background: #0f0f10;
+  background: var(--color-night);
   transition: background 0.6s ease;
 }
 
 body.dark-mode .nav-links li a,
 body.dark-mode .logo {
-  color: #f3efdf;
+  color: var(--color-overlay-text);
   transition: color 0.6s ease;
 }
 
@@ -76,15 +76,15 @@ body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode p {
-  color: #f3efdf;
+  color: var(--color-overlay-text);
   transition: color 0.6s ease;
 }
 
 body.dark-mode .footer p {
-  color: white;
+  color: var(--color-overlay-text);
 }
 
 body.dark-mode .darkSection {
-  background: #0f0f10;
+  background: var(--color-night);
   transition: background 0.6s ease;
 }

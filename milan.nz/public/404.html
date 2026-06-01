@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Milan's Website</title>
+    <script>
+      (function () {
+        var route = window.location.pathname + window.location.search + window.location.hash;
+
+        try {
+          sessionStorage.setItem('redirectRoute', route);
+        } catch (error) {
+          window.location.replace('/#' + route);
+          return;
+        }
+
+        window.location.replace('/');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

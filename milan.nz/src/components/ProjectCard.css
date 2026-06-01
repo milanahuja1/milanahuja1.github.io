@@ -1,14 +1,14 @@
 .project-card {
-  background: #faf8f2;
+  background: var(--color-project-card-bg);
   border-radius: 16px;
-  border: 1.5px solid #d9d3c0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1.5px solid var(--color-border);
+  box-shadow: 0 2px 8px var(--color-shadow);
   overflow: hidden;
   transition: box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 6px 24px rgba(103, 7, 7, 0.1);
+  box-shadow: 0 6px 24px var(--color-shadow);
 }
 
 .project-card-header {
@@ -22,7 +22,7 @@
 }
 
 .project-card-header:focus-visible {
-  outline: 2px solid #921010;
+  outline: 2px solid var(--color-project-brand-red);
   outline-offset: -2px;
 }
 
@@ -42,7 +42,7 @@
 
 .project-card-chevron {
   font-size: 1.1rem;
-  color: #921010;
+  color: var(--color-text);
   transition: transform 0.25s ease;
   flex-shrink: 0;
   margin-left: 1rem;
@@ -53,9 +53,9 @@
 }
 
 .project-card-body {
-  border-top: 1.5px solid #d9d3c0;
+  border-top: 1.5px solid var(--color-border);
   padding: 2.5rem 3rem;
-  background: #fff;
+  background: var(--color-project-card-body-bg);
 }
 
 /* content layout inside cards */
@@ -75,14 +75,14 @@
   width: 45%;
   max-width: 480px;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px var(--color-project-image-shadow);
   flex-shrink: 0;
 }
 
 .card-section img.card-screenshot-sm {
   width: 160px;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px var(--color-project-image-shadow);
   flex-shrink: 0;
 }
 
@@ -96,7 +96,7 @@
   font-size: 1.1rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #3a3a3a;
+  color: var(--color-project-text);
   line-height: 1.7;
 }
 
@@ -115,9 +115,9 @@
   gap: 0.5rem;
   margin-top: 1rem;
   padding: 0.5rem 1.2rem;
-  border: 1.5px solid #921010;
+  border: 1.5px solid var(--color-project-brand-red);
   border-radius: 8px;
-  color: #921010;
+  color: var(--color-project-brand-red);
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
@@ -128,8 +128,8 @@
 }
 
 .card-github:hover {
-  background: #921010;
-  color: #fff;
+  background: var(--color-project-brand-red);
+  color: var(--color-project-button-hover-text);
 }
 
 .card-github img {
@@ -147,25 +147,25 @@
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: 500;
-  color: #3a3a3a;
+  color: var(--color-project-text);
 }
 
 .card-label-website {
   font-family: Cascadia, monospace;
   font-size: 2rem;
   font-weight: 700;
-  color: #01307c;
+  color: var(--color-project-website);
 }
 
 .card-label-plugin {
   font-family: Avenir, "Avenir Next", "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #c46a14;
+  color: var(--color-project-plugin);
 }
 
 .card-label-memoriez {
-  color: #921010;
+  color: var(--color-project-brand-red);
   font-family: 'Playwrite NO', cursive;
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 400;
