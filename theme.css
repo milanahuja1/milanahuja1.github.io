@@ -27,12 +27,12 @@
   --color-code-reveal-text: rgba(11, 63, 114, 0.85);
   --color-code-reveal-bg: rgba(223, 243, 255, 0.72);
 
-  --color-music-top-bg: #f3efdf;
-  --color-music-cloud-glow: rgba(31, 95, 153, 0.28);
-  --color-music-album-glow: rgba(31, 95, 153, 0.35);
-  --color-music-album-glow-soft: rgba(11, 63, 114, 0.18);
-  --color-music-link-glow: rgba(31, 95, 153, 0.34);
-  --color-music-link-glow-soft: rgba(11, 63, 114, 0.1);
+  --color-music-top-bg: rgba(0, 0, 0, 0.85);;
+  --color-music-cloud-glow: rgba(255, 157, 0, 0.339);
+  --color-music-album-glow: rgba(238, 103, 19, 0.297);
+  --color-music-album-glow-soft: rgba(201, 28, 28, 0.204);
+  --color-music-link-glow: rgba(153, 92, 31, 0.34);
+  --color-music-link-glow-soft: rgba(114, 105, 11, 0.1);
   --color-footprint-glow: rgba(255, 0, 0, 0.4);
   --color-footprint-glow-soft: rgba(255, 45, 8, 0.2);
   --color-footprint-glow-from: rgba(255, 0, 0, 0.431);
