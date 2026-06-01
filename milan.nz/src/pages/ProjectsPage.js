@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import MemoriezCard from '../projects/MemoriezCard';
 import VroomlyCard from '../projects/VroomlyCard';
 import GestureXCard from '../projects/GestureXCard';
 import StolenPaintingCard from '../projects/StolenPaintingCard';
@@ -13,6 +14,7 @@ function ProjectsPage() {
       <Navbar />
       <p className="pageTitle">PROJECTS</p>
       <div className="accordions">
+        <MemoriezCard />
         <EQPluginCard />
         <MilanNzCard />
         <GestureXCard />
